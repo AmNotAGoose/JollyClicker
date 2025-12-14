@@ -3,8 +3,8 @@ self.__BUILD_MANIFEST = {
     "afterFiles": [],
     "beforeFiles": [
       {
-        "source": "/JollyClicker//_next/:path+",
-        "destination": "/JollyClicker/_next/:path+"
+        "source": "/christmas-clicker-game//_next/:path+",
+        "destination": "/christmas-clicker-game/_next/:path+"
       }
     ],
     "fallback": []
