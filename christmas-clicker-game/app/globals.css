@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-dancing-script); 
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #000000;
+    --foreground: #ededed;
+  }
+}
+
+@keyframes backgroundAnimation {
+  0% {
+    background: hsl(0, 60%, 10%);
+  }
+  50% {
+    background: hsl(120, 60%, 10%);
+  }
+  100% {
+    background: hsl(0, 60%, 10%);
+  }
+}
+
+body {
+  animation: backgroundAnimation 3s infinite;
+  color: var(--foreground);
+  font-family: var(--font-sans), cursive;
+}
